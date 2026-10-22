@@ -1,0 +1,557 @@
+
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Hi there",
+        "Is anyone available?",
+        "Can I talk to support?",
+        "I need some help"
+      ],
+      "responses": [
+        "Hello! Welcome to customer support. How can I help you today?",
+        "Hi there! What can I assist you with?",
+        "Welcome! Please tell me how I can help."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "That's all, thanks",
+        "I have to go",
+        "Talk to you later"
+      ],
+      "responses": [
+        "Thank you for contacting us! Have a great day.",
+        "Goodbye! We're happy to help whenever you need us.",
+        "Take care, and thank you for choosing us."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "That helped",
+        "I appreciate your help",
+        "Great support"
+      ],
+      "responses": [
+        "You're welcome! Is there anything else I can help you with?",
+        "Happy to help!",
+        "You're welcome. Thank you for contacting us."
+      ]
+    },
+    {
+      "tag": "about_company",
+      "patterns": [
+        "What does your company do?",
+        "Tell me about your company",
+        "Who are you?",
+        "What services do you offer?",
+        "What products do you sell?",
+        "Tell me about your business"
+      ],
+      "responses": [
+        "We're here to help you with products, orders, payments, deliveries, and customer support. Please tell me what you'd like to know."
+      ]
+    },
+    {
+      "tag": "product_information",
+      "patterns": [
+        "Tell me about your products",
+        "What products do you have?",
+        "I need product details",
+        "What features does this product have?",
+        "Is this product available?",
+        "Can you recommend a product?",
+        "I want to know more about a product"
+      ],
+      "responses": [
+        "I'd be happy to help with product information. Please share the product name or ID."
+      ]
+    },
+    {
+      "tag": "product_price",
+      "patterns": [
+        "How much does this cost?",
+        "What is the price?",
+        "Tell me the product price",
+        "How much do I need to pay?",
+        "Is there a discount?",
+        "Do you have any offers?",
+        "Can I get a cheaper price?"
+      ],
+      "responses": [
+        "Please share the product name or ID so I can help you find its price and available offers."
+      ]
+    },
+    {
+      "tag": "order_placement",
+      "patterns": [
+        "How do I place an order?",
+        "I want to buy something",
+        "How can I order a product?",
+        "Help me purchase an item",
+        "How do I checkout?",
+        "Can you help me place an order?"
+      ],
+      "responses": [
+        "You can select your product, add it to your cart, and proceed to checkout. Let me know if you face any difficulty."
+      ]
+    },
+    {
+      "tag": "order_confirmation",
+      "patterns": [
+        "Was my order placed successfully?",
+        "I didn't receive an order confirmation",
+        "Is my order confirmed?",
+        "Where is my confirmation email?",
+        "Did my purchase go through?",
+        "I have not received my order number"
+      ],
+      "responses": [
+        "Please check your email and spam folder for the confirmation. If you still cannot find it, contact support with your registered details."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "Track my order",
+        "What is my order status?",
+        "Has my order been shipped?",
+        "When will my order arrive?",
+        "Can you check my delivery?",
+        "I want to know where my package is",
+        "Is my package on the way?"
+      ],
+      "responses": [
+        "I can help you with order tracking. Please provide your order ID so the order status can be checked."
+      ]
+    },
+    {
+      "tag": "order_not_received",
+      "patterns": [
+        "My order has not arrived",
+        "I haven't received my package",
+        "My delivery is late",
+        "Where is my missing order?",
+        "The expected delivery date has passed",
+        "My package is delayed"
+      ],
+      "responses": [
+        "I'm sorry your order hasn't arrived yet. Please share your order ID so the delivery status can be checked."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "How long does delivery take?",
+        "When will my order be delivered?",
+        "What is the estimated delivery time?",
+        "Do you offer express delivery?",
+        "Can I get same-day delivery?",
+        "How many days will shipping take?"
+      ],
+      "responses": [
+        "Delivery time depends on your location and the product. Please share your order details or delivery area for more information."
+      ]
+    },
+    {
+      "tag": "shipping_charges",
+      "patterns": [
+        "How much is shipping?",
+        "Are delivery charges extra?",
+        "Is shipping free?",
+        "Why was I charged for delivery?",
+        "What are your shipping fees?",
+        "Do you offer free delivery?"
+      ],
+      "responses": [
+        "Shipping charges depend on the order and delivery location. Please check the checkout page or share your order details for assistance."
+      ]
+    },
+    {
+      "tag": "change_delivery_address",
+      "patterns": [
+        "I entered the wrong address",
+        "Change my delivery address",
+        "Can I update my shipping address?",
+        "My address is incorrect",
+        "I want my order delivered somewhere else",
+        "How do I correct my address?"
+      ],
+      "responses": [
+        "I can guide you through updating your address. Please check whether your order has already shipped, as address changes may not be possible afterward."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "I want to cancel my order",
+        "Cancel my purchase",
+        "How can I cancel an order?",
+        "I ordered by mistake",
+        "Please stop my delivery",
+        "Can I cancel an order after placing it?"
+      ],
+      "responses": [
+        "I can help you with the cancellation process. Please provide your order ID and check whether cancellation is still available."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "What is your return policy?",
+        "Can I return a product?",
+        "How do I return an item?",
+        "I want to send my purchase back",
+        "How many days do I have to return a product?",
+        "Are returns free?"
+      ],
+      "responses": [
+        "Return eligibility and deadlines depend on the product and store policy. Please share the product or order details so you can check the applicable rules."
+      ]
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "I want a refund",
+        "How do I get my money back?",
+        "Please refund my payment",
+        "When will I receive my refund?",
+        "My refund has not arrived",
+        "How long does a refund take?",
+        "I returned my product but haven't received my money"
+      ],
+      "responses": [
+        "I'm happy to guide you through the refund process. Please share your order ID and refund status, without sharing sensitive payment details."
+      ]
+    },
+    {
+      "tag": "exchange",
+      "patterns": [
+        "Can I exchange my product?",
+        "I want a different size",
+        "How do I exchange an item?",
+        "Can I replace this with another product?",
+        "I received the wrong size",
+        "I need a different color"
+      ],
+      "responses": [
+        "Exchange options depend on product availability and store policy. Please share your order ID and the item you'd like to exchange."
+      ]
+    },
+    {
+      "tag": "damaged_product",
+      "patterns": [
+        "My product arrived damaged",
+        "The item is broken",
+        "I received a defective product",
+        "My package was damaged",
+        "The product doesn't work",
+        "The item is cracked",
+        "I received a faulty item"
+      ],
+      "responses": [
+        "I'm sorry your product arrived damaged. Please share your order ID and, if possible, a photo of the damage through the official support channel."
+      ]
+    },
+    {
+      "tag": "wrong_item",
+      "patterns": [
+        "I received the wrong product",
+        "This is not what I ordered",
+        "My package contains the wrong item",
+        "You sent me a different product",
+        "The color is different from what I ordered",
+        "I got someone else's order",
+        "Wrong product has been delivered"
+      ],
+      "responses": [
+        "I'm sorry you received the wrong item. Please share your order ID and the product you received so the issue can be investigated."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "What payment methods do you accept?",
+        "Can I pay using UPI?",
+        "Do you accept credit cards?",
+        "Can I use a debit card?",
+        "Is cash on delivery available?",
+        "Can I pay through net banking?",
+        "Do you accept digital wallets?"
+      ],
+      "responses": [
+        "Available payment methods depend on the store and checkout options. Please check the payment section during checkout."
+      ]
+    },
+    {
+      "tag": "payment_failed",
+      "patterns": [
+        "My payment failed",
+        "Payment was unsuccessful",
+        "I cannot complete my payment",
+        "Why was my transaction declined?",
+        "The payment page shows an error",
+        "My UPI payment failed"
+      ],
+      "responses": [
+        "I'm sorry your payment failed. Please check your payment app or bank status before trying again to avoid duplicate payments."
+      ]
+    },
+    {
+      "tag": "double_charge",
+      "patterns": [
+        "I was charged twice",
+        "There are two charges for one order",
+        "My payment was deducted twice",
+        "I paid two times by mistake",
+        "Why is there a duplicate transaction?",
+        "I see two payments for the same purchase"
+      ],
+      "responses": [
+        "I'm sorry about the duplicate charge. Please check your transaction history and contact official support with the transaction references. Never share your PIN or OTP."
+      ]
+    },
+    {
+      "tag": "invoice",
+      "patterns": [
+        "I need my invoice",
+        "Where can I download my bill?",
+        "Can you send me a receipt?",
+        "I lost my purchase invoice",
+        "How do I get a GST invoice?",
+        "Please provide my order bill"
+      ],
+      "responses": [
+        "You may be able to download your invoice from your order history or confirmation email. If it isn't available, contact support with your order ID."
+      ]
+    },
+    {
+      "tag": "account_creation",
+      "patterns": [
+        "How do I create an account?",
+        "I want to sign up",
+        "How can I register?",
+        "Help me create a new account",
+        "How do I join your website?",
+        "Can I shop without an account?"
+      ],
+      "responses": [
+        "You can usually register through the Sign Up option on the website or app. Follow the instructions to complete your registration."
+      ]
+    },
+    {
+      "tag": "login_issue",
+      "patterns": [
+        "I cannot log in",
+        "My account login is not working",
+        "I can't access my account",
+        "The website won't let me sign in",
+        "I keep getting a login error",
+        "Why am I unable to log in?"
+      ],
+      "responses": [
+        "Please check your email or username and password, and try again. If the issue continues, use the official account recovery option."
+      ]
+    },
+    {
+      "tag": "forgot_password",
+      "patterns": [
+        "I forgot my password",
+        "How can I reset my password?",
+        "I cannot remember my login password",
+        "Help me recover my account",
+        "I need to change my password",
+        "The password reset link is not working"
+      ],
+      "responses": [
+        "Use the Forgot Password option on the login page and follow the recovery instructions. Never share your password or verification code with anyone."
+      ]
+    },
+    {
+      "tag": "update_profile",
+      "patterns": [
+        "How do I change my profile details?",
+        "Update my phone number",
+        "I want to change my email address",
+        "How can I edit my account information?",
+        "My contact details are incorrect",
+        "Can I update my personal details?"
+      ],
+      "responses": [
+        "You can usually update your information in your account settings. Some changes may require identity verification."
+      ]
+    },
+    {
+      "tag": "account_security",
+      "patterns": [
+        "I think my account was hacked",
+        "Someone accessed my account",
+        "My account is being used by someone else",
+        "I received a suspicious login alert",
+        "I see an order I did not place",
+        "How do I secure my account?"
+      ],
+      "responses": [
+        "I'm sorry this happened. Change your password using the official website, secure your email, and contact support immediately about unauthorized activity."
+      ]
+    },
+    {
+      "tag": "technical_issue",
+      "patterns": [
+        "Your website is not working",
+        "The app keeps crashing",
+        "I cannot open the website",
+        "The page is stuck loading",
+        "I found a technical error",
+        "The checkout page is broken",
+        "The app is very slow"
+      ],
+      "responses": [
+        "I'm sorry you're experiencing a technical issue. Try refreshing the page or updating the app. If the problem continues, tell us what error you see."
+      ]
+    },
+    {
+      "tag": "coupon_discount",
+      "patterns": [
+        "How do I apply a coupon?",
+        "My discount code is not working",
+        "I have a promo code",
+        "Where do I enter my coupon?",
+        "Why is my discount invalid?",
+        "Do you have any discount codes?"
+      ],
+      "responses": [
+        "Enter your coupon code in the discount field at checkout. Check the expiry date, minimum order value, and eligibility conditions."
+      ]
+    },
+    {
+      "tag": "warranty",
+      "patterns": [
+        "Does this product have a warranty?",
+        "How long is the warranty?",
+        "My product is still under warranty",
+        "How do I claim a warranty?",
+        "Where can I find warranty details?",
+        "Is the warranty included in the price?"
+      ],
+      "responses": [
+        "Warranty coverage depends on the product and manufacturer. Please share the product name or model to find the applicable warranty information."
+      ]
+    },
+    {
+      "tag": "human_agent",
+      "patterns": [
+        "I want to talk to a human",
+        "Connect me to customer support",
+        "Can I speak to an agent?",
+        "I need a real person",
+        "Transfer me to a representative",
+        "I don't want to talk to a bot"
+      ],
+      "responses": [
+        "Of course. If live support is available, you can request a human agent through the official support channel. I can also help collect the details of your issue."
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "I want to make a complaint",
+        "I'm unhappy with your service",
+        "Your service is disappointing",
+        "I had a bad customer experience",
+        "I want to report a problem",
+        "I'm not satisfied with the support"
+      ],
+      "responses": [
+        "I'm sorry we haven't met your expectations. Please explain what happened so we can identify the best next step."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I want to give feedback",
+        "Where can I leave a review?",
+        "I have a suggestion",
+        "Your service was excellent",
+        "How can I rate your service?",
+        "I want to share my experience"
+      ],
+      "responses": [
+        "Thank you for sharing your feedback! We'd love to hear about your experience and suggestions."
+      ]
+    },
+    {
+      "tag": "business_hours",
+      "patterns": [
+        "What are your working hours?",
+        "What are your business hours?",
+        "When is customer support available?",
+        "Are you open today?",
+        "What time do you close?",
+        "Can I contact support at night?",
+        "When can I call your team?"
+      ],
+      "responses": [
+        "Support hours vary by company. Please check the official Contact Us page for current working hours."
+      ]
+    },
+    {
+      "tag": "contact_information",
+      "patterns": [
+        "How can I contact you?",
+        "What is your customer care number?",
+        "Do you have an email address?",
+        "Where is your contact page?",
+        "How do I reach customer support?",
+        "Can I contact you by email?"
+      ],
+      "responses": [
+        "Please visit the official Contact Us page for verified customer support phone numbers, email addresses, and other contact options."
+      ]
+    },
+    {
+      "tag": "privacy",
+      "patterns": [
+        "How do you use my data?",
+        "What is your privacy policy?",
+        "Is my personal information safe?",
+        "Do you share my information?",
+        "How can I delete my personal data?",
+        "Can I request my data to be deleted?"
+      ],
+      "responses": [
+        "Please review the company's official privacy policy for details about data collection, use, retention, and deletion requests."
+      ]
+    },
+    {
+      "tag": "out_of_scope",
+      "patterns": [
+        "Tell me a joke",
+        "What is the weather today?",
+        "Who won the cricket match?",
+        "Write me a poem",
+        "Can you help me with homework?",
+        "Tell me something unrelated to shopping"
+      ],
+      "responses": [
+        "I'm designed to help with customer service questions. I can assist with orders, products, payments, returns, and account issues."
+      ]
+    }
+  ]
+}
