@@ -18,6 +18,14 @@ ServiAI is an intelligent customer-support chatbot developed using **Python, Nat
 - Help functionality
 - Predefined responses using `intents.json`
 
+## Screenshots
+
+### Chatbot Interface
+![ServiAI Chatbot Interface](screenshots/chatbot-interface.png)
+
+### Order Status Conversation
+![ServiAI Order Status](screenshots/order-status.png)
+
 ## 🧠 How It Works
 
 The chatbot follows this pipeline:
